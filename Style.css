@@ -192,8 +192,15 @@ hr {
     :root {
         font-size: 12px;
     }
+    header {
+        padding: 20px 10px;
+    }
     nav{
         display: none;
+    }
+
+    .YouTubeLogo {
+        width: 64px;
     }
 
     .SearchForm {
@@ -201,7 +208,7 @@ hr {
     }
 
     .Videos {
-        margin-left: 8%;
+        margin-left: 2%;
         margin-top: 2rem;
         justify-content: flex-start;
 
