@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+:root {
+    font-size: 16px;
+    background-color: var(--Dark);
+    color: white;
+    --Dark: rgb(16, 16, 16);
+    --Semi-Dark: rgb(32,32,32);
+    --Gray: rgb(64,64,64);
+    --LightGray: rgb(148,148,148);
+    --Red: red;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--LightGray);
+    border-radius: 24px;
+}
+
+header {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    position: fixed;
+    z-index: 999;
+    background-color: var(--Dark);
+    color: white;
+}
+
+.HeadMenu {
+    display: flex;
+    align-items: center;
+}
+
+.YouTubeLogo {
+    padding-left: 32px;
+    padding-right: 8px;
+    font-size: 1.5rem;
+    color: white;
+    width: 72px;
+}
+
+.SearchForm {
+    padding: 4px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchButton {
+    padding: 0.5rem;
+    margin-right: 0.8rem;
+    width: 3rem;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border-style: solid;
+    border-width: 1.5px;
+    outline: none;
+    cursor: pointer;
+    border-left-style: none;
+    background-color: var(--Semi-Dark);
+    color: white;
+}
+
+.SearchInput {
+    padding: 0.5rem;
+    height: 32px;
+    padding-left: 0.8rem;
+    outline: none;
+    width: 32rem;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    background-color: var(--Dark);
+    color:white;
+}
+
+.Profile {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile i {
+    padding-right: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.Profile-Picture {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+main {
+    padding-top: 3.5rem;
+    display: grid;
+    height:100vh;
+}
+
+nav {
+    width: 200px;
+    padding-top: 20px;
+    position: fixed;
+    background-color: var(--Dark);
+}
+
+.Section {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.Section span{
+    padding-right: 16px;
+}
+
+.Section:hover {
+    background-color: var(--Gray);
+}
+
+hr {
+    margin: 10px 0px;
+}
+
+.Videos {
+    width: calc(100%-14rem);
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 14rem;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.Video {
+    cursor: pointer;
+    width: 16rem;
+}
+
+.Thumbnail {
+    width: 16rem;
+}
+
+.Title {
+    padding-top: 8px;
+}
+
+.Channel {
+    font-size: 0.8rem;
+    padding-top: 6px;
+    color: var(--LightGray);
+}
+
+.Details {
+    display: flex;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.Details p {
+    padding-top: 0.2rem;
+    color: var(--LightGray);
+}
+
+.Views {
+    padding-right: 10px;
+}
+
+@media (max-width:1023px) {
+    :root {
+        font-size: 12px;
+    }
+    nav{
+        display: none;
+    }
+
+    .SearchForm {
+        display: none;
+    }
+
+    .Videos {
+        margin-left: 8%;
+        margin-top: 2rem;
+        justify-content: flex-start;
+
+    }
+
+    .Thumbnail {
+        width: 28rem;
+    }
+
+
+}
