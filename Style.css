@@ -208,14 +208,19 @@ hr {
     }
 
     .Videos {
-        margin-left: 2%;
+        margin-left: 0%;
         margin-top: 2rem;
         justify-content: flex-start;
+        padding: 12px;
 
     }
 
+    .Video {
+        width: 100%;
+    }
+
     .Thumbnail {
-        width: 28rem;
+        width: 100%;
     }
 
 
